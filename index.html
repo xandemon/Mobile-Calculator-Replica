@@ -1,53 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Mobile Calculator Replica</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+  </head>
 
-<head>
-    <title>Simple Calculator</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-
-<body>
+  <body>
     <div class="container">
-        <h1>Simple Calculator</h1>
-        <section class="calculator">
-            <input type="text" class="display">
-            <table>
-                <tr>
-                    <td><button type="button" class="reset">C</button></td>
-                    <td><button type="button" class="operator" data-num="/">÷</button></td>
-                    <td><button type="button" class="operator" data-num="*">x</button></td>
-                    <td><button type="button" class="delete">Del</button></td>
-                </tr>
-                <tr>
-                    <td><button type="button" class="number" data-num="7">7</button></td>
-                    <td><button type="button" class="number" data-num="8">8</button></td>
-                    <td><button type="button" class="number" data-num="9">9</button></td>
-                    <td><button type="button" class="operator" data-num="-">-</button></td>
-                </tr>
-                <tr>
-                    <td><button type="button" class="number" data-num="4">4</button></td>
-                    <td><button type="button" class="number" data-num="5">5</button></td>
-                    <td><button type="button" class="number" data-num="6">6</button></td>
-                    <td><button type="button" class="operator" data-num="+">+</button></td>
-                </tr>
-                <tr>
-                    <td><button type="button" class="number" data-num="1">1</button></td>
-                    <td><button type="button" class="number" data-num="2">2</button></td>
-                    <td><button type="button" class="number" data-num="3">3</button></td>
-                    <td rowspan="2"><button type="button" class="equals">=</button></td>
-                </tr>
-                <tr>
-                    <td><button type="button" class="number" data-num="%">%</button></td>
-                    <td><button type="button" class="number" data-num="0">0</button></td>
-                    <td><button type="button" class="number" data-num=".">.</button></td>
-                </tr>
-            </table>
-        </section>
+      <!-- <h1>Simple Calculator</h1> -->
+      <section class="calculator">
+        <input type="text" class="display" />
+        <table>
+          <tr>
+            <td><button type="button" class="reset">C</button></td>
+            <td>
+              <button type="button" class="operator" data-num="/">÷</button>
+            </td>
+            <td>
+              <button type="button" class="operator" data-num="*">x</button>
+            </td>
+            <td>
+              <button type="button" class="delete">
+                <i class="fa fa-delete-left"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button" class="number" data-num="7">7</button>
+            </td>
+            <td>
+              <button type="button" class="number" data-num="8">8</button>
+            </td>
+            <td>
+              <button type="button" class="number" data-num="9">9</button>
+            </td>
+            <td>
+              <button type="button" class="operator" data-num="-">-</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button" class="number" data-num="4">4</button>
+            </td>
+            <td>
+              <button type="button" class="number" data-num="5">5</button>
+            </td>
+            <td>
+              <button type="button" class="number" data-num="6">6</button>
+            </td>
+            <td>
+              <button type="button" class="operator" data-num="+">+</button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button" class="number" data-num="1">1</button>
+            </td>
+            <td>
+              <button type="button" class="number" data-num="2">2</button>
+            </td>
+            <td>
+              <button type="button" class="number" data-num="3">3</button>
+            </td>
+            <td rowspan="2"><button type="button" class="equals">=</button></td>
+          </tr>
+          <tr>
+            <td>
+              <button type="button" class="number" data-num="%">%</button>
+            </td>
+            <td>
+              <button type="button" class="number" data-num="0">0</button>
+            </td>
+            <td>
+              <button type="button" class="number" data-num=".">.</button>
+            </td>
+          </tr>
+        </table>
+      </section>
     </div>
     <script src="app.js"></script>
-</body>
-
+  </body>
 </html>
