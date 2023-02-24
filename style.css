@@ -92,7 +92,7 @@ button {
   background-color: greenyellow;
   border-radius: 7px;
 }
-@media screen and (max-height: 1000px) {
+@media screen and (max-width: 1000px) {
   body {
     min-height: 90vh;
   }
